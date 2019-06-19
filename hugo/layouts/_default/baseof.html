@@ -1,0 +1,16 @@
+{{ partial "head" . }}
+<body class="{{.Title}}">
+  <div id='header-wrapper'>
+    <div class='header'>
+      <a class='logo' href='/'>
+        <div alt='Blazing Cloud'></div>
+      </a>
+      <%= erb :nav, :locals => {:active => @pagename } %> 
+    </div>
+  </div>
+
+	{{ block "main" . }}{{ end }}
+
+	{{ partial "footer" . }}
+	</body>
+</html>

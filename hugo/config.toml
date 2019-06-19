@@ -1,0 +1,3 @@
+baseURL = "http://blazingcloud.net/"
+languageCode = "en-us"
+title = "My New Hugo Site"
