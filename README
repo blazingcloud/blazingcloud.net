@@ -1,38 +1,3 @@
 
-hosted at:
+bundle exec rackup -p 3000
 
-    http://blazingcloud.heroku.com
-
-to run it locally:
-
-    bundle
-    foreman start
-
---
-deploy hook added
-
-heroku addons:add deployhooks:http  url=http://choki-gobbler.herokuapp.com/incoming/deploy/heroku --remote heroku
---
-note: http://blog.blazingcloud.net is hosted at Media Temple and is implemented in WordPress
-
---
-staging setup:
-
-  git remote add heroku git@heroku.com:blazingcloud-staging.git
-    
-deploy to staging:
-
-  rake deploy:staging
-
-  url to staging: http://blazingcloud-staging.herokuapp.com/
-
---
-production setup:
-  
-  git remote add production git@heroku.com:blazingcloud.git
-  
-deploy to production:
-  
-  rake deploy:production
-  
---
